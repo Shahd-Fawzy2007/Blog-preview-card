@@ -38,7 +38,10 @@ body{
     width: 100%;
     margin-bottom: 12px;
 }
-
+span{
+    font-size: 16px;
+    font-weight: 800;  
+}
 .status span {
 background-color: var(--Yellow);
 padding: 6px 10px;
@@ -48,10 +51,7 @@ border-radius: 5px;
 .status p{
     margin-top: 12px;
 }
-span{
-     font-size: 16px;
-     font-weight: 800;  
-}
+
 a{
    font-size: 25px  ;
    display: inline-block;
