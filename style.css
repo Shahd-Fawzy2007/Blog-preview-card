@@ -1,86 +1,59 @@
 :root {
-    --Yellow: hsl(47, 88%, 63%);
-    --White: hsl(0, 0%, 100%);
-    --Gray-500: hsl(0, 0%, 42%);
-    --Gray-950: hsl(0, 0%, 7%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --gray: hsl(216, 15%, 48%);
+    --dark-blue: hsl(218, 44%, 22%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: "Figtree", sans-serif;
-    background-color: var(--Yellow);
-    color: var(--Gray-950);
-}
-.container{
+
+body {
+
+    font-family: "Outfit", sans-serif;
+    background-color: var(--light-gray);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    min-height:100vh;
+    min-height: 100vh;
 }
-.card{
-    border: var(--Gray-950) 2px solid;
+
+.container {
+    background: var(--white);
     border-radius: 20px;
-    max-width: 400px;
-    background-color: var(--White);
-    padding: 20px;
-    box-shadow: 10px 10px 0 var(--Gray-950);
-}
-.card-img{
     text-align: center;
-  
+    max-width: 320px;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0,0.04);
+
 }
-.card-img img{
-    border-radius: 20px;
+
+img {display: block;
+    border-radius: 10px;
     width: 100%;
-    margin-bottom: 12px;
-}
-
-.status span {
-background-color: var(--Yellow);
-padding: 6px 10px;
-border-radius: 5px;
 
 }
-.status p{
-    margin-top: 12px;
+
+.text-container {
+    padding:15px  30px;
 }
-span{
-     font-size: 16px;
-     font-weight: 800;  
-}
-a{
-   font-size: 25px  ;
-   display: inline-block;
-   margin-bottom: 12px;
-   font-weight: 800;
-   text-decoration: none;
-   color: var(--Gray-950);
+
+.title {
+    color: var(--dark-blue);
+    font-size: 20px;
+    font-weight: 700;
 
 }
-a:hover{
-    color: var(--Yellow);
-    cursor: pointer;
+
+.text {
+    padding-top: 10px;
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 400;
 }
-p{
-    font-weight: 500;
-    margin-bottom: 12px;
-    font-size: 16px;
-    
-}
-.card-des p{
-    color: var(--Gray-500);
-    line-height: 1.5;
-}
-.author-info{
-    display: flex;
-    align-items: center;
-}
-.author-info span{
-margin-left: 12px;
-}
-.author-info img{
-    width: 40px;
-    }
