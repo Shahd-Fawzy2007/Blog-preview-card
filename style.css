@@ -1,0 +1,82 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+    color: var(--Gray-950);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+.card{
+    border: var(--Gray-950) 2px solid;
+    border-radius: 20px;
+    max-width: 400px;
+    background-color: var(--White);
+    padding: 20px;
+    box-shadow: 10px 10px 0 var(--Gray-950);
+}
+.card-img{
+    text-align: center;
+  
+}
+.card-img img{
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.status span {
+background-color: var(--Yellow);
+padding: 6px 10px;
+border-radius: 5px;
+
+}
+.status p{
+    margin-top: 12px;
+}
+span{
+     font-size: 16px;
+     font-weight: 800;  
+}
+h1{
+   font-size: 25px  ;
+   margin-bottom: 12px;
+
+}
+h1:hover{
+    color: var(--Yellow);
+    cursor: pointer;
+}
+p{
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 16px;
+    
+}
+.card-des p{
+    color: var(--Gray-500);
+    line-height: 1.5;
+}
+.author-info{
+    display: flex;
+    align-items: center;
+}
+.author-info span{
+margin-left: 12px;
+}
+.author-info img{
+    width: 40px;
+    }
