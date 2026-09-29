@@ -19,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height:100vh;
+  
 }
 .card{
     border: var(--Gray-950) 2px solid;
@@ -38,10 +39,11 @@ body{
     width: 100%;
     margin-bottom: 12px;
 }
-span{
+.author-info span , .status span{
     font-size: 16px;
     font-weight: 800;  
 }
+
 .status span {
 background-color: var(--Yellow);
 padding: 6px 10px;
@@ -52,7 +54,7 @@ border-radius: 5px;
     margin-top: 12px;
 }
 
-a{
+.card-title h1 a{
    font-size: 25px  ;
    display: inline-block;
    margin-bottom: 12px;
@@ -61,11 +63,11 @@ a{
    color: var(--Gray-950);
 
 }
-a:hover{
+.card-title h1 a:hover{
     color: var(--Yellow);
     cursor: pointer;
 }
-p{
+.status p , .card-des p{
     font-weight: 500;
     margin-bottom: 12px;
     font-size: 16px;
@@ -78,10 +80,9 @@ p{
 .author-info{
     display: flex;
     align-items: center;
+    gap:12px;
 }
-.author-info span{
-margin-left: 12px;
-}
+
 .author-info img{
     width: 40px;
     }
